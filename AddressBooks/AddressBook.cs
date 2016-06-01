@@ -91,6 +91,18 @@ namespace AddressBooks
             }
         }
 
+        //6 Выбрать пользователей, передавая произвольное условие (лямбда - выражение) и два параметра - 
+        //с какого элемента выбирать и по какой (paging).
+        public void Query6(int skip, int pageSize)
+        {
+            var query = _addresses.Where(u => u.City == "Lviv").Skip(1 * skip).Take(pageSize).ToList();
+
+            foreach (var user in query)
+            {
+                Console.WriteLine("{0} {1}, {2}", user.FirstName, user.LastName, user.City);
+            }
+        }
+
         //7 Количество пользователей, из города (передать в параметрах), у которых сегодня день рождения.
         public void Query7(string city)
         {

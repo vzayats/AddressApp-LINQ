@@ -50,6 +50,9 @@ namespace AddressBooks_Main
             Console.WriteLine("\nUsers that match the key of the dictionary: 'man' and 'woman':");
             addressBook.Query5();
 
+            Console.WriteLine("\nUsers from Lviv (Paging):");
+            addressBook.Query6(2, 4);
+
             Console.WriteLine("\nNumber of users from Lviv, who has a birthday today:");
             addressBook.Query7(city: "Lviv");
 
