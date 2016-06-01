@@ -155,7 +155,7 @@ namespace AddressBooks
                 LastName = "Andriychuk",
                 FirstName = "Yuliya",
                 BirthDate = new DateTime(1989, 01, 25),
-                TimeAdded = new DateTime(2016, 05, 29),
+                TimeAdded = new DateTime(2016, 06, 01),
                 City = "Lviv",
                 Address = "Mlynova st., 15/5",
                 PhoneNumber = "+380957546879",
@@ -167,7 +167,7 @@ namespace AddressBooks
                 LastName = "Mariya",
                 FirstName = "Savchuk",
                 BirthDate = new DateTime(2005, 06, 01),
-                TimeAdded = new DateTime(2016, 05, 25),
+                TimeAdded = new DateTime(2016, 06, 01),
                 City = "Kiev",
                 Address = "Naukova st., 10/5",
                 PhoneNumber = "+380979647463",
@@ -196,13 +196,13 @@ namespace AddressBooks
                 Address = "Tekhnichna st., 100/15",
                 PhoneNumber = null,
                 Gender = GenderEnum.Male,
-                Email = "vpasichnyk@yamdex.ru"
+                Email = "vpasichnyk@yandex.ru"
             },
             new Users()
             {
                 LastName = "Kovalenko",
                 FirstName = "Ira",
-                BirthDate = new DateTime(1992, 09, 01),
+                BirthDate = DateTime.Now,
                 TimeAdded = new DateTime(2016, 05, 10),
                 City = "Lviv",
                 Address = "Tekhnichna st., 100/15",
@@ -243,7 +243,7 @@ namespace AddressBooks
                 City = "Lviv",
                 Address = "Kovalska st., 50",
                 PhoneNumber = "+380971671358",
-                Gender = GenderEnum.Female,
+                Gender = GenderEnum.Male,
                 Email = "mukolayenko@gmail.com"
             }
         };
